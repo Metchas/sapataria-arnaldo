@@ -4,7 +4,106 @@ body {
 
 .banner-header {
     width: 100%;
-    height: 300px;
+    height: 150px;
     object-position:0 23%;
     object-fit: cover;
 }
+
+
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhamento do texto */
+    padding: 20px; /* Espaçamento interno */
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 0; /* Alinhar no rodapé da página */
+    width: 100%; /* Largura completa */
+  }
+
+  .titulo-pagina {
+    width: 80%;
+    line-height: 60px;
+    font-size: 24pt;
+    background-color: brown; /* Cor de fundo do rodapé */
+    margin:auto;
+    vertical-align: ;
+    color: #fff; /* Cor do texto do rodapé */
+    
+    
+
+  }
+
+  .subtitulo-pagina
+   {
+    width: 80%;
+    line-height: 60px;
+    font-size: 20pt;
+    background-color: brown; /* Cor de fundo do rodapé */
+    margin:  auto;
+    vertical-align: ;
+    color: #fff; /* Cor do texto do rodapé */
+    
+
+  }
+
+
+  .menu-navegacao ul
+  {
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+
+  .botton{
+    width:40px;
+    height:40px;
+    background-color:#03800b;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:11px;
+    line-height:32px;
+    text-transform: uppercase;
+    float:left;
+    text-align: center;
+  }
+  .botton:hover{
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+  }
+  .botton a{
+    color:#fff;
+    text-decoration:none;
+    padding:5px 5px 5px 0;
+  }
+
+
+
+
+
+  #chat-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  #chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  #chat-form {
+    display: flex;
+  }
+  
+  #chat-input {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+
