@@ -9,6 +9,21 @@ body {
     object-fit: cover;
 }
 
+.flex.conteiner{
+
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+
+
+.flex-container img {
+  flex: 1 0 30%; /* O primeiro número é a flex-basis, o segundo é a flex-grow e o terceiro é a flex-shrink */
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
 
 footer {
     background-color: #333; /* Cor de fundo do rodapé */
@@ -90,20 +105,30 @@ footer {
     border: 1px solid #ccc;
     border-radius: 4px;
     overflow: hidden;
+    flex-direction: column;
+    
   }
   
   #chat-messages {
-    height: 200px;
+    height: 700px;
     overflow-y: scroll;
+    
   }
   
   #chat-form {
     display: flex;
+
   }
   
-  #chat-input {
-    flex: 1;
-    margin-right: 10px;
-  }
+  #chat-input 
+    {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    
+  
 
 
