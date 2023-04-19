@@ -1,134 +1,259 @@
 body {
-    color: black;
+
+  height: 100vh;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #ac311c, #dee7e5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-.banner-header {
-    width: 100%;
-    height: 150px;
-    object-position:0 23%;
-    object-fit: cover;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.flex.conteiner{
+.flex.conteiner {
 
-    display: flex;
-    flex-wrap: wrap;
-   
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
 
 }
 
 
 .flex-container img {
-  flex: 1 0 30%; /* O primeiro número é a flex-basis, o segundo é a flex-grow e o terceiro é a flex-shrink */
+  flex: 1 0 30%;
+  /* O primeiro número é a flex-basis, o segundo é a flex-grow e o terceiro é a flex-shrink */
   width: 100%;
   height: auto;
   margin: 10px;
 }
 
 footer {
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto do rodapé */
-    text-align: center; /* Alinhamento do texto */
-    padding: 20px; /* Espaçamento interno */
-    position: absolute; /* Posicionamento absoluto */
-    bottom: 0; /* Alinhar no rodapé da página */
-    width: 100%; /* Largura completa */
-  }
+  background-color: #333;
+  /* Cor de fundo do rodapé */
+  color: #fff;
+  /* Cor do texto do rodapé */
+  text-align: center;
+  /* Alinhamento do texto */
+  padding: 20px;
+  /* Espaçamento interno */
+  position: absolute;
+  /* Posicionamento absoluto */
+  bottom: 0;
+  /* Alinhar no rodapé da página */
+  width: 100%;
+  /* Largura completa */
+}
 
-  .titulo-pagina {
-    width: 80%;
-    line-height: 60px;
-    font-size: 24pt;
-    background-color: brown; /* Cor de fundo do rodapé */
-    margin:auto;
-    vertical-align: ;
-    color: #fff; /* Cor do texto do rodapé */
-    
-    
-
-  }
-
-  .subtitulo-pagina
-   {
-    width: 80%;
-    line-height: 60px;
-    font-size: 20pt;
-    background-color: brown; /* Cor de fundo do rodapé */
-    margin:  auto;
-    vertical-align: ;
-    color: #fff; /* Cor do texto do rodapé */
-    
-
-  }
-
-
-  .menu-navegacao ul
-  {
-    display: flex;
-    justify-content: center;
-
-
-  }
-
-
-  .botton{
-    width:40px;
-    height:40px;
-    background-color:#03800b;
-    margin: 5px;
-    padding:10px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    font-size:11px;
-    line-height:32px;
-    text-transform: uppercase;
-    float:left;
-    text-align: center;
-  }
-  .botton:hover{
-    opacity: 0.50;
-    -moz-opacity: .50;
-    filter:alpha (opacity=50);
-  }
-  .botton a{
-    color:#fff;
-    text-decoration:none;
-    padding:5px 5px 5px 0;
-  }
+.titulo-pagina {
+  border-radius: 5px;
+  width: 80%;
+  line-height: 60px;
+  font-size: 24pt;
+  background-color: rgb(158, 131, 131);
+  /* Cor de fundo do rodapé */
+  margin: auto;
+  vertical-align: ;
+  color: #fff;
+  /* Cor do texto do rodapé */
 
 
 
+}
+
+.subtitulo-pagina {
+  border-radius: 5px;
+  width: 80%;
+  line-height: 60px;
+  font-size: 20pt;
+  background-color: rgb(0, 0, 0);
+  /* Cor de fundo do rodapé */
+  margin: auto;
+  vertical-align: ;
+  color: #fff;
+  /* Cor do texto do rodapé */
 
 
-  #chat-container {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: hidden;
-    flex-direction: column;
-    
-  }
+}
+
+
+.menu-navegacao ul {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+.botton {
+  width: 40px;
+  height: 40px;
+  background-color: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  ;
+  margin: 5px;
+  padding: 10px;
+  font-size: 11px;
+  line-height: 32px;
+  text-transform: uppercase;
+  float: left;
+  text-align: center;
+}
+
+.botton:hover {
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter: alpha (opacity=50);
+}
+
+.botton a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 5px 5px 0;
+}
+
+
+
+
+
+#chat-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-direction: column;
+
+}
+
+#chat-messages {
+  height: 700px;
+  overflow-y: scroll;
+
+}
+
+#chat-form {
+  display: flex;
+
+}
+
+#chat-input {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+
+/* css formulário*/
+.layout ul {
+  display: flex;
+  justify-content: center;
   
-  #chat-messages {
-    height: 700px;
-    overflow-y: scroll;
-    
+}
+.layout li {
+  margin: 0 10px;
+}
+
+.layout button {
+  background: linear-gradient(0deg, rgb(253, 253, 253) 0%, rgb(255, 196, 1) 100%);
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  animation: gradiente 15s ease infinite;
+}
+
+@keyframes gradiente {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  #chat-form {
-    display: flex;
 
+  50% {
+    background-position: 100% 50%;
   }
-  
-  #chat-input 
-    {
-      width: 100px;
-      height: 100px;
-      background-color: #ccc;
-      margin-bottom: 10px;
-    }
 
-    
-  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+form {
+  width: 15%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
 
 
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.logo img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+}
+
+.logo {
+  width: 300px;
+  height: 231px;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+
+
+.sapataria {
+  font-family: Barrio;
+}

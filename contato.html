@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,52 +11,84 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        body
-        {
-            background-image: url("/imagens/fundo.jpg");
-			background-position: aleign="center";
-			background-repeat: no-repeat;
-            text-align: center;
-        }
-        body
     
-     </style>
 </head>
 
 <body>
 
-    <nav>
+
+    <nav class="layout">
+
         <ul>
-            <h3>
-            <button><a href="catalogo.html" > Catalogo </a></button>    &emsp;&emsp;
-            <button><a href="index.html" > Inicio </a></button>         &emsp;&emsp;
-            <button><a href="quemsomos.html" > Quem Somos </a></button> &emsp;&emsp;
-            <button><a href="contato.html"> Contato </a></button>       &emsp;&emsp;
-            </h3>                                 
-        </ul> 
+            
+            <li><button><a href="catalogo.html"> Catalogo </a></button> </li>
+            <li><button><a href="index.html"> Inicio </a></button> </li>
+            <li><button><a href="quemsomos.html"> Quem Somos </a></button> </li>
+            <li><button><a href="contato.html"> Contato </a></button> </li>
+            
+        </ul>
     </nav>
+    <br>
+
+    <div class="logo" >
+        <img  src="imagens/logo.gif">
+    
+
+    </div>
 
 
-<div>
-<img src="imagens/logo.gif" width="250" height="250" align="center"><br><br><br>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        </div>
 
-</div>  
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+        </div>
 
-<h1>SAPATARIA DO ARNALDO<h1>   
-<h3>R. Forte do Leme, Jd Santa Adélia 52, São paulo, SP<h3>
-<h3>arnaldodosapato@pingmail.com<h3>
-<h3>(11)3371-1279<h3>
+        <div class="form-group">
+            <label for="Assunto">Assunto:</label>
+        </div>
 
-<button onclick="window.location.href = 'https://www.instagram.com/messiasbarreira/';">Instagram</button>
-<BR>
-<button onclick="window.location.href = 'https://www.facebook.com/messias.ribeiro.31';">Facebook</button>
 
-   
 
-<footer>
-    <p>R. Forte do Leme, Jd Santa Adélia 52, São paulo, SP</p>
-</footer>
+        <select id="subject">
+
+            <option value="prazo"> Prazo de entrega</option>
+            <option value="orcamento"> Orçamento</option>
+            <option value="contato"> Contato</option>
+            <option value="outros"> Outros</option><br>
+
+
+        </select>
+        <br>
+
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+
+    <br>
+    <div class="sapataria"> Sapataria do Arnaldo</div>
+
+
+            <button onclick="window.location.href = 'https://www.instagram.com/messiasbarreira/';">Instagram</button>
+            <button onclick="window.location.href = 'https://www.facebook.com/messias.ribeiro.31';">Facebook</button>
+
+
+
+            <footer>
+                <p>R. Forte do Leme, Jd Santa Adélia 52, São paulo, SP</p>
+            </footer>
 
 </body>
 
