@@ -8,36 +8,34 @@
     <title>Document</title>
 
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     
 </head>
 
 <body>
 
-
     <nav class="layout">
-
         <ul>
-            
-            <li><button><a href="catalogo.html"> Catalogo </a></button> </li>
-            <li><button><a href="index.html"> Inicio </a></button> </li>
-            <li><button><a href="quemsomos.html"> Quem Somos </a></button> </li>
-            <li><button><a href="contato.html"> Contato </a></button> </li>
-            
+            <h3>
+
+                <button><a href="index.html"> Inicio </a></button>         
+                <button><a href="catalogo.html"> Catálogo </a></button>     
+                <button><a href="quemsomos.html"> Quem Somos </a></button>  
+                <button><a href="contato.html"> Contato </a></button>       
+            </h3>
         </ul>
     </nav>
     <br>
 
-    <div class="logo" >
-        <img  src="imagens/logo.gif">
-    
-
+    <div class="logo">
+     <img src="imagens/logo.gif" width="250" height="250" align="center">
+        
     </div>
 
 
-    <form action="#" method="POST">
+    <form action="#" method="POST" onsubmit="alert('Formulário enviado')">
         <div class="form-group">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
@@ -80,15 +78,18 @@
     <br>
     <div class="sapataria"> Sapataria do Arnaldo</div>
 
-
+        <div class="botaoface">
             <button onclick="window.location.href = 'https://www.instagram.com/messiasbarreira/';">Instagram</button>
             <button onclick="window.location.href = 'https://www.facebook.com/messias.ribeiro.31';">Facebook</button>
+        </div>
+        
 
-
-
-            <footer>
+<footer>
+            
                 <p>R. Forte do Leme, Jd Santa Adélia 52, São paulo, SP</p>
-            </footer>
+</footer>
+
+                
 
 </body>
 

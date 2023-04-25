@@ -1,9 +1,10 @@
 body {
 
   height: 100vh;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #ac311c, #dee7e5);
+  background: linear-gradient(45deg, #ee7752, #886774, #cf7a6b, #dee7e5);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  text-align: center;
 }
 
 @keyframes gradient {
@@ -45,7 +46,7 @@ footer {
   /* Cor do texto do rodapé */
   text-align: center;
   /* Alinhamento do texto */
-  padding: 20px;
+  
   /* Espaçamento interno */
   position: absolute;
   /* Posicionamento absoluto */
@@ -53,9 +54,11 @@ footer {
   /* Alinhar no rodapé da página */
   width: 100%;
   /* Largura completa */
+  margin: auto;
 }
 
 .titulo-pagina {
+  text-align: center;
   border-radius: 5px;
   width: 80%;
   line-height: 60px;
@@ -72,6 +75,8 @@ footer {
 }
 
 .subtitulo-pagina {
+  
+  text-align: center;
   border-radius: 5px;
   width: 80%;
   line-height: 60px;
@@ -79,7 +84,6 @@ footer {
   background-color: rgb(0, 0, 0);
   /* Cor de fundo do rodapé */
   margin: auto;
-  vertical-align: ;
   color: #fff;
   /* Cor do texto do rodapé */
 
@@ -163,6 +167,7 @@ footer {
 }
 
 .layout button {
+  margin-top: 10px;
   background: linear-gradient(0deg, rgb(253, 253, 253) 0%, rgb(255, 196, 1) 100%);
   right: 20px;
   bottom: 20px;
@@ -238,22 +243,13 @@ input[type="submit"]:hover {
 
 
 
-.logo img {
-  height: 100%;
-  width: 300px;
-  object-fit: cover;
-}
 
 .logo {
-  width: 300px;
-  height: 231px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   margin: 2rem auto;
 }
 
 
-
-.sapataria {
-  font-family: Barrio;
-}
