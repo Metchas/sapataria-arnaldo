@@ -1,12 +1,42 @@
 body {
 
   height: 100vh;
-  background: linear-gradient(45deg, #ee7752, #886774, #cf7a6b, #dee7e5);
+  background: linear-gradient(20deg, #9807a5, #ce8601, #caec09);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   text-align: center;
 }
-
+.layout{
+  width: 100%;
+  height: 60px;
+  background: #d6cbcb;
+  float: left;
+  z-index: 9999;
+  position: fixed;
+}
+.center{
+width: 100%;
+height: 60px;
+margin: 0 auto;  
+}
+.center ul{
+  width: 70%;
+  height: 60px;
+  float: left;
+}
+.center ul li{
+  width: auto;
+  padding: 22px 50px;
+  list-style: none;
+  float: right;
+  text-align: center;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22px;
+}
+.center ul li:hover{
+background-color: black;  
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -26,8 +56,13 @@ body {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+}
 
-
+.imagemarnaldo {
+    float:left;
+    margin-left: 50px;
+    margin-bottom: 120px;
+  
 }
 
 
@@ -36,11 +71,12 @@ body {
   /* O primeiro número é a flex-basis, o segundo é a flex-grow e o terceiro é a flex-shrink */
   width: 100%;
   height: auto;
-  margin: 10px;
+  padding: 10px;
+  
 }
 
 footer {
-  background-color: #333;
+  background-color: #8d4604;
   /* Cor de fundo do rodapé */
   color: #fff;
   /* Cor do texto do rodapé */
@@ -66,7 +102,6 @@ footer {
   background-color: rgb(158, 131, 131);
   /* Cor de fundo do rodapé */
   margin: auto;
-  vertical-align: ;
   color: #fff;
   /* Cor do texto do rodapé */
 
@@ -86,43 +121,7 @@ footer {
   margin: auto;
   color: #fff;
   /* Cor do texto do rodapé */
-
-
-}
-
-
-.menu-navegacao ul {
-  display: flex;
-  justify-content: center;
-
-
-}
-
-
-.botton {
-  width: 40px;
-  height: 40px;
-  background-color: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
-  ;
-  margin: 5px;
-  padding: 10px;
-  font-size: 11px;
-  line-height: 32px;
-  text-transform: uppercase;
-  float: left;
-  text-align: center;
-}
-
-.botton:hover {
-  opacity: 0.50;
-  -moz-opacity: .50;
-  filter: alpha (opacity=50);
-}
-
-.botton a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 5px 5px 0;
+padding: auto;
 }
 
 
@@ -156,42 +155,10 @@ footer {
 }
 
 
-/* css formulário*/
-.layout ul {
-  display: flex;
-  justify-content: center;
-  
-}
-.layout li {
-  margin: 0 10px;
-}
 
-.layout button {
-  margin-top: 10px;
-  background: linear-gradient(0deg, rgb(253, 253, 253) 0%, rgb(255, 196, 1) 100%);
-  right: 20px;
-  bottom: 20px;
-  border: none;
-  box-shadow: none;
-  width: 130px;
-  height: 40px;
-  border-radius: 5px;
-  animation: gradiente 15s ease infinite;
-}
 
-@keyframes gradiente {
-  0% {
-    background-position: 0% 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
 
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 form {
   width: 15%;
@@ -249,7 +216,7 @@ input[type="submit"]:hover {
   height: 250px;
   display: flex;
   align-items: center;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 
